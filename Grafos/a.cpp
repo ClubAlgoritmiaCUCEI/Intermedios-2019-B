@@ -10,7 +10,7 @@ int s, t;
 int main(){ _
   cin >> s >> t;
   clicks[s] = 0;
-  q.push(start);
+  q.push(s);
   while( !q.empty() ){
     int x = q.front();
     q.pop();
