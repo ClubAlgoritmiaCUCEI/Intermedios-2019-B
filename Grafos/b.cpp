@@ -31,10 +31,10 @@ int main(){ _
   cin >> tt;
   while( tt-- ){
     cin >> n;
-    Forn(u, n){
+    for(int u = 0; u < n; u++){
       g[u].clear();
     }
-    Forn(i, n - 1){
+    for(int i = 0; i < n - 1; i++){
       int u, v;
       cin >> u >> v;
       g[u].pb(v);
