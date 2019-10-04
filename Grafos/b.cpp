@@ -26,7 +26,7 @@ int bfs(int s){
   return max_element(dist, dist + n) - dist;
 }
  
-int main(){ _
+int main(){ 
   int tt;
   cin >> tt;
   while( tt-- ){
@@ -37,8 +37,8 @@ int main(){ _
     for(int i = 0; i < n - 1; i++){
       int u, v;
       cin >> u >> v;
-      g[u].pb(v);
-      g[v].pb(u);
+      g[u].push_back(v);
+      g[v].push_back(u);
     }
     cout << (dist[bfs(bfs(0))] + 1) / 2 << '\n';
   }
