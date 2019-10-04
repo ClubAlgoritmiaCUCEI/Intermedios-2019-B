@@ -2,6 +2,7 @@
 using namespace std;
  
 const int N = 2005;
+
 vector<int> g[N];
 int vis[N];
 int n;
@@ -13,7 +14,7 @@ int bfs(int s){
     int u = q.front().first;
     int dist = q.front().second;
     q.pop();
-    if( u == 0 && dist > 0 ){
+    if( u == s && dist > 0 ){
       return dist;
     }
     for(int v: g[u]){
