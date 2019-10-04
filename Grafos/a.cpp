@@ -7,7 +7,7 @@ int clicks[2 * N];
 queue<int> q;
 int s, t;
 
-int main(){ _
+int main(){
   cin >> s >> t;
   clicks[s] = 0;
   q.push(s);
